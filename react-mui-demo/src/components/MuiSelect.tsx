@@ -1,5 +1,5 @@
 import { useState } from 'react'
-import { Stack, TextField, MenuItem } from '@mui/material'
+import { Box, TextField, MenuItem } from '@mui/material'
 
 export const MuiSelect = () => {
   const [countries, setCountries] = useState<string[]>([])
@@ -10,7 +10,7 @@ export const MuiSelect = () => {
     setCountries(typeof value === 'string' ? value.split(',') : value)
   }
   return (
-    <Stack spacing={4} width='250px'>
+    <Box width='250px'>
       <TextField
         label='Select country'
         select
@@ -26,6 +26,6 @@ export const MuiSelect = () => {
         <MenuItem value='US'>USA</MenuItem>
         <MenuItem value='AU'>Australia</MenuItem>
       </TextField>
-    </Stack>
+    </Box>
   )
 }
