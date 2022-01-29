@@ -61,7 +61,7 @@ export const MuiButton = () => {
           size='small'
           color='secondary'
           aria-label='alignment button group'>
-          <Button>Left</Button>
+          <Button onClick={() => alert('Left clicked')}>Left</Button>
           <Button>Center</Button>
           <Button>Right</Button>
         </ButtonGroup>
