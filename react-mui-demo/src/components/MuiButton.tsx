@@ -1,7 +1,8 @@
 import { useState } from 'react'
 import {
-  Button,
   Stack,
+  Button,
+  IconButton,
   ButtonGroup,
   ToggleButtonGroup,
   ToggleButton
@@ -72,6 +73,9 @@ export const MuiButton = () => {
         <Button variant='contained' endIcon={<SendIcon />} disableElevation>
           Send
         </Button>
+        <IconButton color='success' size='small' aria-label='send'>
+          <SendIcon />
+        </IconButton>
       </Stack>
       <Stack direction='row'>
         <ButtonGroup
