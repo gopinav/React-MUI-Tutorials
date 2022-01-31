@@ -1,4 +1,4 @@
-import { Box, Stack, Autocomplete, TextField } from '@mui/material'
+import { Stack, Autocomplete, TextField } from '@mui/material'
 import { useState } from 'react'
 
 type Skill = {
