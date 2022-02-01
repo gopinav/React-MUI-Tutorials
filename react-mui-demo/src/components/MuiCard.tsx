@@ -1,5 +1,5 @@
 import {
-  Stack,
+  Box,
   Card,
   CardContent,
   CardActions,
@@ -10,7 +10,7 @@ import {
 
 export const MuiCard = () => {
   return (
-    <Stack spacing={2} width='300px'>
+    <Box width='300px'>
       <Card>
         <CardMedia
           component='img'
@@ -33,6 +33,6 @@ export const MuiCard = () => {
           <Button size='small'>Learn More</Button>
         </CardActions>
       </Card>
-    </Stack>
+    </Box>
   )
 }
