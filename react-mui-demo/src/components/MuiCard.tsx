@@ -16,7 +16,7 @@ export const MuiCard = () => {
           component='img'
           height='140'
           image='https://source.unsplash.com/random'
-          alt='green iguana'
+          alt='unsplash image'
         />
         <CardContent>
           <Typography gutterBottom variant='h5' component='div'>
