@@ -1,5 +1,5 @@
 import './App.css'
-import { MuiAccordion } from './components/MuiAccordion'
+
 // import { MuiTypography } from './components/MuiTypography'
 // import { MuiButton } from './components/MuiButton'
 // import { MuiTextField } from './components/MuiTextField'
@@ -11,6 +11,8 @@ import { MuiAccordion } from './components/MuiAccordion'
 // import { MuiAutocomplete } from './components/MuiAutocomplete'
 // import { MuiLayout } from './components/MuiLayout'
 // import { MuiCard } from './components/MuiCard'
+// import { MuiAccordion } from './components/MuiAccordion'
+import { MuiImageList } from './components/MuiImageList'
 
 function App() {
   return (
@@ -26,7 +28,8 @@ function App() {
       {/* <MuiAutocomplete /> */}
       {/* <MuiLayout /> */}
       {/* <MuiCard /> */}
-      <MuiAccordion />
+      {/* <MuiAccordion /> */}
+      <MuiImageList />
     </div>
   )
 }
