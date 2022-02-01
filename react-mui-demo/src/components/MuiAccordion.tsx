@@ -9,18 +9,17 @@ import { useState } from 'react'
 
 export const MuiAccordion = () => {
   const [expanded, setExpanded] = useState<string | false>(false)
-  const handleChange =
-    (panel: string) => (event: React.SyntheticEvent, isExpanded: boolean) => {
-      setExpanded(isExpanded ? panel : false)
-    }
+  const handleChange = (isExpanded: boolean, panel: string) => {
+    setExpanded(isExpanded ? panel : false)
+  }
   return (
     <>
       <Accordion
         expanded={expanded === 'panel1'}
-        onChange={handleChange('panel1')}>
+        onChange={(event, isExpanded) => handleChange(isExpanded, 'panel1')}>
         <AccordionSummary
-          aria-controls='panel1a-content'
-          id='panel1a-header'
+          aria-controls='panel1-content'
+          id='panel1-header'
           expandIcon={<ExpandMoreIcon />}>
           <Typography>Accordion 1</Typography>
         </AccordionSummary>
@@ -33,10 +32,10 @@ export const MuiAccordion = () => {
       </Accordion>
       <Accordion
         expanded={expanded === 'panel2'}
-        onChange={handleChange('panel2')}>
+        onChange={(event, isExpanded) => handleChange(isExpanded, 'panel2')}>
         <AccordionSummary
-          aria-controls='panel1a-content'
-          id='panel1a-header'
+          aria-controls='panel2-content'
+          id='panel2-header'
           expandIcon={<ExpandMoreIcon />}>
           <Typography>Accordion 2</Typography>
         </AccordionSummary>
@@ -49,10 +48,10 @@ export const MuiAccordion = () => {
       </Accordion>
       <Accordion
         expanded={expanded === 'panel3'}
-        onChange={handleChange('panel3')}>
+        onChange={(event, isExpanded) => handleChange(isExpanded, 'panel3')}>
         <AccordionSummary
-          aria-controls='panel1a-content'
-          id='panel1a-header'
+          aria-controls='panel3-content'
+          id='panel3-header'
           expandIcon={<ExpandMoreIcon />}>
           <Typography>Accordion 3</Typography>
         </AccordionSummary>
