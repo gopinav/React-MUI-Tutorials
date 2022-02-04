@@ -12,9 +12,11 @@ import './App.css'
 // import { MuiCard } from './components/MuiCard'
 // import { MuiAccordion } from './components/MuiAccordion'
 // import { MuiImageList } from './components/MuiImageList'
-import { MuiNavbar } from './components/MuiNavbar'
-import { MuiLink } from './components/MuiLink'
-import { MuiBreadcrumbs } from './components/MuiBreadcrumbs'
+// import { MuiNavbar } from './components/MuiNavbar'
+// import { MuiLink } from './components/MuiLink'
+// import { MuiBreadcrumbs } from './components/MuiBreadcrumbs'
+// import { MuiDrawer } from './components/MuiDrawer'
+import { MuiTabs } from './components/MuiTabs'
 
 function App() {
   return (
@@ -32,9 +34,11 @@ function App() {
       {/* <MuiCard /> */}
       {/* <MuiAccordion /> */}
       {/* <MuiImageList /> */}
-      <MuiNavbar />
-      <MuiLink />
-      <MuiBreadcrumbs />
+      {/* <MuiNavbar /> */}
+      {/* <MuiLink /> */}
+      {/* <MuiBreadcrumbs /> */}
+      {/* <MuiDrawer /> */}
+      <MuiTabs />
     </div>
   )
 }
