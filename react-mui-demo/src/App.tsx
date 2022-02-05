@@ -1,5 +1,4 @@
 import './App.css'
-import { MuiBadge } from './components/MuiBadge'
 // import { MuiTypography } from './components/MuiTypography'
 // import { MuiButton } from './components/MuiButton'
 // import { MuiTextField } from './components/MuiTextField'
@@ -21,6 +20,8 @@ import { MuiBadge } from './components/MuiBadge'
 // import { MuiSpeedDial } from './components/MuiSpeedDial'
 // import { MuiBottomNavigation } from './components/MuiBottomNavigation'
 // import { MuiAvatar } from './components/MuiAvatar'
+// import { MuiBadge } from './components/MuiBadge'
+import { MuiList } from './components/MuiList'
 
 function App() {
   return (
@@ -46,7 +47,8 @@ function App() {
       {/* <MuiSpeedDial /> */}
       {/* <MuiBottomNavigation /> */}
       {/* <MuiAvatar /> */}
-      <MuiBadge />
+      {/* <MuiBadge /> */}
+      <MuiList />
     </div>
   )
 }
