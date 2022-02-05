@@ -18,7 +18,8 @@ import './App.css'
 // import { MuiDrawer } from './components/MuiDrawer'
 // import { MuiTabs } from './components/MuiTabs'
 // import { MuiSpeedDial } from './components/MuiSpeedDial'
-import { MuiBottomNavigation } from './components/MuiBottomNavigation'
+// import { MuiBottomNavigation } from './components/MuiBottomNavigation'
+import { MuiAvatar } from './components/MuiAvatar'
 
 function App() {
   return (
@@ -42,7 +43,8 @@ function App() {
       {/* <MuiDrawer /> */}
       {/* <MuiTabs /> */}
       {/* <MuiSpeedDial /> */}
-      <MuiBottomNavigation />
+      {/* <MuiBottomNavigation /> */}
+      <MuiAvatar />
     </div>
   )
 }
