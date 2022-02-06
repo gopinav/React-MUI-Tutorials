@@ -1,4 +1,5 @@
 import './App.css'
+import { MuiLoadingButton } from './components/MuiLoadingButton'
 // import { MuiTypography } from './components/MuiTypography'
 // import { MuiButton } from './components/MuiButton'
 // import { MuiTextField } from './components/MuiTextField'
@@ -28,7 +29,7 @@ import './App.css'
 // import { MuiSnackbar } from './components/MuiSnackbar'
 // import { MuiDialog } from './components/MuiDialog'
 // import { MuiSkeleton } from './components/MuiSkeleton'
-import { MuiProgress } from './components/MuiProgress'
+// import { MuiProgress } from './components/MuiProgress'
 
 function App() {
   return (
@@ -62,7 +63,8 @@ function App() {
       {/* <MuiSnackbar /> */}
       {/* <MuiDialog /> */}
       {/* <MuiSkeleton /> */}
-      <MuiProgress />
+      {/* <MuiProgress /> */}
+      <MuiLoadingButton />
     </div>
   )
 }
