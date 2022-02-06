@@ -23,7 +23,8 @@ import './App.css'
 // import { MuiBadge } from './components/MuiBadge'
 // import { MuiList } from './components/MuiList'
 // import { MuiChip } from './components/MuiChip'
-import { MuiTooltip } from './components/MuiTooltip'
+// import { MuiTooltip } from './components/MuiTooltip'
+import { MuiAlert } from './components/MuiAlert'
 
 function App() {
   return (
@@ -52,7 +53,8 @@ function App() {
       {/* <MuiBadge /> */}
       {/* <MuiList /> */}
       {/* <MuiChip /> */}
-      <MuiTooltip />
+      {/* <MuiTooltip /> */}
+      <MuiAlert />
     </div>
   )
 }
