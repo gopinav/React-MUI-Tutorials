@@ -26,7 +26,8 @@ import './App.css'
 // import { MuiTooltip } from './components/MuiTooltip'
 // import { MuiAlert } from './components/MuiAlert'
 // import { MuiSnackbar } from './components/MuiSnackbar'
-import { MuiDialog } from './components/MuiDialog'
+// import { MuiDialog } from './components/MuiDialog'
+import { MuiSkeleton } from './components/MuiSkeleton'
 
 function App() {
   return (
@@ -58,7 +59,8 @@ function App() {
       {/* <MuiTooltip /> */}
       {/* <MuiAlert /> */}
       {/* <MuiSnackbar /> */}
-      <MuiDialog />
+      {/* <MuiDialog /> */}
+      <MuiSkeleton />
     </div>
   )
 }
