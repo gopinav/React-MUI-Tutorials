@@ -1,68 +1,46 @@
-import { Tabs, Tab, Box } from '@mui/material'
+import { Box, Tab } from '@mui/material'
+import { TabContext, TabList, TabPanel } from '@mui/lab'
 import { useState } from 'react'
 import FavoriteIcon from '@mui/icons-material/Favorite'
 
-type TabPanelProps = {
-  children?: React.ReactNode
-  index: number
-  value: number
-}
-
-function TabPanel(props: TabPanelProps) {
-  const { children, value, index, ...other } = props
-
-  return (
-    <div
-      role='tabpanel'
-      hidden={value !== index}
-      id={`tabpanel-${index}`}
-      aria-labelledby={`tab-${index}`}
-      {...other}>
-      {value === index && <Box sx={{ p: 3 }}>{children}</Box>}
-    </div>
-  )
-}
-
 export const MuiTabs = () => {
-  const [value, setValue] = useState(0)
+  const [value, setValue] = useState('1')
 
-  const handleChange = (event: React.SyntheticEvent, newValue: number) => {
+  const handleChange = (event: React.SyntheticEvent, newValue: string) => {
     setValue(newValue)
   }
   return (
-    <Box>
-      <Box
-        sx={{
-          display: 'flex'
-        }}>
-        <Tabs
-          value={value}
-          onChange={handleChange}
-          aria-label='basic tabs'
-          textColor='secondary'
-          indicatorColor='secondary'
-          centered
-          variant='scrollable'
-          scrollButtons='auto'
-          orientation='vertical'
-          sx={{ borderRight: 1, borderColor: 'divider' }}>
-          <Tab label='Tab One' icon={<FavoriteIcon />} id='tab-0' />
-          <Tab label='Tab Two' id='tab-1' />
-          <Tab label='Tab Three' id='tab-2' disabled />
-          <Tab label='Tab Four' id='tab-3' />
-          <Tab label='Tab Five' id='tab-4' />
-          <Tab label='Ta Five' id='tab-5' />
-        </Tabs>
-        <TabPanel value={value} index={0}>
-          Tab Panel One
-        </TabPanel>
-        <TabPanel value={value} index={1}>
-          Tab Panel Two
-        </TabPanel>
-        <TabPanel value={value} index={2}>
-          Tab Panel Three
-        </TabPanel>
-      </Box>
+    <Box sx={{ width: '300px' }}>
+      <TabContext value={value}>
+        <Box sx={{ borderBottom: 1, borderColor: 'divider' }}>
+          <TabList
+            onChange={handleChange}
+            aria-label='Tabs example'
+            textColor='secondary'
+            indicatorColor='secondary'
+            centered
+            variant='scrollable'
+            scrollButtons='auto'>
+            <Tab
+              icon={<FavoriteIcon />}
+              iconPosition='start'
+              label='Tab One'
+              value='1'
+            />
+            <Tab label='Tab Two' value='2' disabled />
+            <Tab label='Tab Three' value='3' />
+            <Tab label='Tab Four' value='4' />
+            <Tab label='Tab Five' value='5' />
+            <Tab label='Tab Six' value='6' />
+          </TabList>
+        </Box>
+        <TabPanel value='1'>Item One</TabPanel>
+        <TabPanel value='2'>Item Two</TabPanel>
+        <TabPanel value='3'>Item Three</TabPanel>
+        <TabPanel value='4'>Item Four</TabPanel>
+        <TabPanel value='5'>Item Five</TabPanel>
+        <TabPanel value='6'>Item Six</TabPanel>
+      </TabContext>
     </Box>
   )
 }
