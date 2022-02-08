@@ -1,9 +1,7 @@
 import AdapterDateFns from '@mui/lab/AdapterDateFns'
 import { LocalizationProvider } from '@mui/lab'
 import './App.css'
-import { MuiDateTimePicker } from './components/MuiDateTimePicker'
-import { MuiDateRangePicker } from './components/MuiDateRangePicker'
-// import { MuiLoadingButton } from './components/MuiLoadingButton'
+
 // import { MuiTypography } from './components/MuiTypography'
 // import { MuiButton } from './components/MuiButton'
 // import { MuiTextField } from './components/MuiTextField'
@@ -34,6 +32,11 @@ import { MuiDateRangePicker } from './components/MuiDateRangePicker'
 // import { MuiDialog } from './components/MuiDialog'
 // import { MuiSkeleton } from './components/MuiSkeleton'
 // import { MuiProgress } from './components/MuiProgress'
+// import { MuiLoadingButton } from './components/MuiLoadingButton'
+// import { MuiDateTimePicker } from './components/MuiDateTimePicker'
+// import { MuiDateRangePicker } from './components/MuiDateRangePicker'
+// import { MuiTimeline } from './components/MuiTimeline'
+// import { MuiMasonry } from './components/MuiMasonry'
 
 function App() {
   return (
@@ -70,8 +73,10 @@ function App() {
         {/* <MuiSkeleton /> */}
         {/* <MuiProgress /> */}
         {/* <MuiLoadingButton /> */}
-        <MuiDateTimePicker />
-        <MuiDateRangePicker />
+        {/* <MuiDateTimePicker /> */}
+        {/* <MuiDateRangePicker /> */}
+        {/* <MuiMasonry /> */}
+        {/* <MuiTimeline /> */}
       </div>
     </LocalizationProvider>
   )
