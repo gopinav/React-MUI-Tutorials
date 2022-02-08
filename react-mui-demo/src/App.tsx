@@ -1,6 +1,7 @@
 import AdapterDateFns from '@mui/lab/AdapterDateFns'
 import { LocalizationProvider } from '@mui/lab'
 import './App.css'
+import { MuiTable } from './components/MuiTable'
 
 // import { MuiTypography } from './components/MuiTypography'
 // import { MuiButton } from './components/MuiButton'
@@ -67,6 +68,7 @@ function App() {
         {/* <MuiList /> */}
         {/* <MuiChip /> */}
         {/* <MuiTooltip /> */}
+        <MuiTable />
         {/* <MuiAlert /> */}
         {/* <MuiSnackbar /> */}
         {/* <MuiDialog /> */}
